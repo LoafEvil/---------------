@@ -1,0 +1,317 @@
+html{
+	box-sizing: border-box;	
+}
+
+*, *::before, *::after{
+	box-sizing: inherit;
+}
+
+body{
+    margin: 0;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    color:black;
+}
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+    border: 2px solid rgb(255, 0, 0);
+}
+
+
+
+
+.header {
+    padding-bottom: 207px;
+}
+
+.header__menu__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__menu__link {
+    margin-right: 42px;       
+}
+
+.header__menu__link:last-child{
+    margin-right: 0;
+}
+
+.header__menu__link-content-img{
+    margin: 0 16px;
+}
+
+.header__menu__link-content{
+    text-decoration: none;
+    color: black;    
+    
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 35px;   
+    display: flex;
+    flex-wrap: wrap; 
+}
+
+.header__menu__link-content:active, .header__menu__link-content:focus, .header__menu__link-content:hover{
+    opacity: .75;
+    text-decoration:underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.header__content {
+    text-align: center;
+}
+
+.header__content__title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 49px;
+
+    margin: 0 auto 4px;
+}
+
+.heder__content__subtitle {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+
+    padding-bottom: 43px;
+}
+
+.heder__content__button {
+    width: 188px;
+    height: 57px;
+
+    border: 1px solid #000000;
+
+    background:none;
+
+    margin-bottom: 206px;
+}
+
+.heder__content__button:hover{
+    background: rgb(201, 201, 201);
+}
+
+
+
+
+
+
+
+
+.AboutUs{
+    background-color: #1d1d1d;
+}
+
+.AboutUs__cards{
+    display: grid;
+
+    grid-template-columns: repeat(auto-fill, minmax(417px, 276px));
+
+    grid-gap: 178px;
+    padding-bottom: 248px;
+    margin: 128px 0 0  0;
+
+    place-content: center;
+    
+    background: url(../img/layers.png) center bottom repeat-x, #1d1d1d;
+
+}
+
+.AboutUs__card{
+    background-color: #000000;
+
+    grid-column: span 1;
+
+    width: 417px;
+    height: 276px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.AboutUs-date {
+    color: white;
+    margin-bottom: 24px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: white;
+
+}
+
+.AboutUs-info {
+
+    padding-left: 10px;
+    padding-right: 5px;
+    
+    display: inline-block;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: white;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.Team {
+    text-align: center;
+}
+
+.Team__title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 49px;
+
+    margin: 138px auto 4px 0;
+}
+
+.Team__subtitle {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    
+    margin-bottom: 131px;
+}
+
+.Team__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.Team__card {
+    margin-bottom: 150px;
+}
+
+.Team-name {
+    line-height: 0;
+    padding-top: 23px;
+}
+
+.Team-post {
+    display: inline-block;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.Team-twitter{
+    margin-right: 4px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.Services {
+    background: #1d1d1d;
+    text-align: center;
+}
+
+.Services__title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 49px;
+    color: white;
+
+    margin: 178px auto 4px 0;
+}
+
+.Services__subtitle {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    color: white;
+    
+    margin-bottom: 131px;
+}
+.Services__cards {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 81px;
+}
+
+.Services__card {
+    margin-bottom: 155px;
+}
+
+.Services__card-title {
+    margin-top: 43px;
+    color: white;
+}
+.Services__card-info {
+    margin-top: 31px;
+
+    display: inline-block;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+
+    color: white;
+}
